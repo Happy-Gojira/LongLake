@@ -1,38 +1,172 @@
+#masthead {
+  background: #fff;
+}
+.container{
+  display:flex;
+  flex-direction: row-reverse;
+}
+.flex-container{
+	display:flex;
+  justify-content: flex-end;
+  background: #30415d;
+  padding:5px;
+  border-top: 4px solid #8eaebd;
+  border-bottom: 4px solid #8eaebd;
+}
+.flex-container a{
+  font-size:1.3em;
+}
+.item{
+  margin-right: 1.5em;
+}
+.item a{
+	color: #fdfffc;
+}
+.svg-inline--fa{
+	width:1.5em !important;
+  color: #fff;
+  font-size:1.2em;
+}
 
+/*Search input */
+#q {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  background: url(https://lgltest.sals.edu/wp-content/uploads/2019/08/search_crimsonArtboard-1.svg) 5px 50% no-repeat #fff;
+  padding: 8px 8px 8px 43px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  outline: 0;
+  border: 1px solid #4988a7;
+  width: 220px;
+  margin: 0 5px 0 0
+}
+/*
+input{
+	  -webkit-appearance: none;
+}*/
 
+#search-button {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  background: #cf6766;
+  border: 0;
+  padding: 8px 13px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  outline: 0;
+  margin: 1% 0% 0% 0%;
+}
 
+/*Panel top padding*/
+.panel-row-style{
+  padding:0px 25px;
+}
+
+#mastRight{
+  float:right;
+}
+#masthead .hgroup {
+    padding-top: 0%;
+}
+
+#main {
+  background: #fff;
+}
+.hours{
+  font-size:1.2em;
+}
+
+/**Nav bar**/
+.main-navigation{
+	border-bottom: 4px solid #8eaebd;
+	border-top: 4px solid #8eaebd;
+  background: #30415d;
+  margin:auto;
+}
+.main-navigation ul li:hover > a,
+.main-navigation ul li.focus > a {
+  background: #8eaebd;
+  color: #ffffff;
+}
+
+/* Glyph, by Harry Roberts */
+hr.style-eight {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+}
+hr.style-eight:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
+}
 
 /* Colophon */
 
 #colophon {
-  background: #F1F2F4;
+  background: #fff;
 }
 
 address{
-  color:#040b11;
+  color:#fff;
 }
 
 #footer-widgets {
-  background: #7DBDD9;
+  background: #30415d;
 }
 #footerBar{
 	margin: 0%;
   text-align: right;
-  background:#4988A7;
-  color:#F56E6B;
+  background:#8eaebd;
+  color:#cf6766;
   padding-bottom: 1em;
 }
 
 footer h3 {
   text-transform: uppercase;
-  color: #040B11 !important;
+  color: #fff !important;
 }
-#footer-widgets .widget a{
-  color:#040b11;
+#footer-widgets .widget a:link{
+  color:#fff;
 }
+#footer-widgets .widget a:visited{
+  color:#fff;
+}
+#footer-widgets .widget a:hover{
+  color:#cf6766;
+}
+
 .footerMenu{
-	border-left: 2px solid #4988A7;
+	border-left: 2px solid #cf6766;
   padding-left: 1em;
 }
- background: #00bcff;
- 
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 600px) {
+  #logo-masthead-salem > div > div >img{
+  	margin:auto;
+	}
+  .flex-container{
+    display: flex;
+    flex-wrap:wrap;
+  }
+  .flex-container a{
+  	font-size:1em;
+	}
+  .item{
+    margin-bottom: 1em;
+  }
+
+}
