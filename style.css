@@ -1,172 +1,111 @@
-#masthead {
-  background: #fff;
+/*fonts*/
+*{
+	font-family: merriweather, serif;
+	font-weight: 400;
+	font-style: normal;
 }
-.container{
-  display:flex;
-  flex-direction: row-reverse;
+h1,h2,h3,h4,h5,h6{
+		font-family: cardo, serif; 
 }
-.flex-container{
-	display:flex;
-  justify-content: flex-end;
-  background: #30415d;
-  padding:5px;
-  border-top: 4px solid #8eaebd;
-  border-bottom: 4px solid #8eaebd;
+.entry-content{
+		font-size:1.6em;
 }
-.flex-container a{
-  font-size:1.3em;
+.entry-title{font-size:3em !important;}
+/*colors*/
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
 }
-.item{
-  margin-right: 1.5em;
+/*Masthead*/
+	/*ribbon*/
+#masthead div{
+		padding-top:0% !important;
+		padding-bottom:0% !important;
 }
-.item a{
-	color: #fdfffc;
+.u-nav-ribbon{
+		float: right;
+		background: #48A942;
+		padding-bottom: 1%;
+		padding-left: 1%;
+		padding-right: 1%;
+		font-size:1.2em;
+		line-height:2em;
 }
-.svg-inline--fa{
-	width:1.5em !important;
-  color: #fff;
-  font-size:1.2em;
-}
-
-/*Search input */
-#q {
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
-  background: url(https://lgltest.sals.edu/wp-content/uploads/2019/08/search_crimsonArtboard-1.svg) 5px 50% no-repeat #fff;
-  padding: 8px 8px 8px 43px;
-  font-size: 16px;
-  font-weight: 700;
-  color: #333;
-  outline: 0;
-  border: 1px solid #4988a7;
-  width: 220px;
-  margin: 0 5px 0 0
-}
-/*
-input{
-	  -webkit-appearance: none;
-}*/
-
-#search-button {
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
-  background: #cf6766;
-  border: 0;
-  padding: 8px 13px;
-  font-size: 18px;
-  font-weight: 700;
-  color: #fff;
-  outline: 0;
-  margin: 1% 0% 0% 0%;
+.utility-nav {
+    width: 100%;
+    display: block;
+    font-size: 13px !important;
+    line-height: 13px !important;
 }
 
-/*Panel top padding*/
-.panel-row-style{
-  padding:0px 25px;
+.u-nav-ribbon a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+	margin-left: 1em;
+}
+.u-nav-ribbon a:link {
+  color: white;
 }
 
-#mastRight{
-  float:right;
-}
-#masthead .hgroup {
-    padding-top: 0%;
+.u-nav-ribbon a:visited {
+  color: white;
 }
 
-#main {
-  background: #fff;
+.u-nav-ribbon a:focus, a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.u-nav-ribbon a:active {
+  color: red;
+}
+	/*menu*/
+#menu-row-top{padding: 0 6% 0 6% !important;}
+#main-menu-top{font-size:1.6em;}
+#main-menu-top a:focus, a:hover{
+		border-bottom:3px solid #555;
+		color:#000;
+}
+
+/*background row*/
+.site-main{
+		padding-top:0% !important;
+}
+#hero{
+		margin-bottom: 0%;
+}
+
+
+/*News Ticker*/
+.mtphr-dnt-tick-contents{
+		color: white;
+		padding-bottom: 1em;
+		font-size: 1em;
+}
+.mtphr-dnt-wrapper{background: #58d68d;}
+.mtphr-dnt-title{
+		color: white !important;
+		margin: 0em 0em 0em 6em !important;
+}
+
+/*News blog section*/
+ul.pmeta {
+    display: none !important;
 }
 .hours{
-  font-size:1.2em;
+		font-size:2.3rem;
+}
+.op-row{
+		font-size:2rem;
 }
 
-/**Nav bar**/
-.main-navigation{
-	border-bottom: 4px solid #8eaebd;
-	border-top: 4px solid #8eaebd;
-  background: #30415d;
-  margin:auto;
-}
-.main-navigation ul li:hover > a,
-.main-navigation ul li.focus > a {
-  background: #8eaebd;
-  color: #ffffff;
-}
 
-/* Glyph, by Harry Roberts */
-hr.style-eight {
-  overflow: visible; /* For IE */
-  padding: 0;
-  border: none;
-  border-top: medium double #333;
-  color: #333;
-  text-align: center;
-}
-hr.style-eight:after {
-  content: "§";
-  display: inline-block;
-  position: relative;
-  top: -0.7em;
-  font-size: 1.5em;
-  padding: 0 0.25em;
-  background: white;
-}
-
-/* Colophon */
-
-#colophon {
-  background: #fff;
-}
-
-address{
-  color:#fff;
-}
-
-#footer-widgets {
-  background: #30415d;
-}
-#footerBar{
-	margin: 0%;
-  text-align: right;
-  background:#8eaebd;
-  color:#cf6766;
-  padding-bottom: 1em;
-}
-
-footer h3 {
-  text-transform: uppercase;
-  color: #fff !important;
-}
-#footer-widgets .widget a:link{
-  color:#fff;
-}
-#footer-widgets .widget a:visited{
-  color:#fff;
-}
-#footer-widgets .widget a:hover{
-  color:#cf6766;
-}
-
-.footerMenu{
-	border-left: 2px solid #cf6766;
-  padding-left: 1em;
-}
-
-/* Use a media query to add a breakpoint at 800px: */
-@media screen and (max-width: 600px) {
-  #logo-masthead-salem > div > div >img{
-  	margin:auto;
-	}
-  .flex-container{
-    display: flex;
-    flex-wrap:wrap;
-  }
-  .flex-container a{
-  	font-size:1em;
-	}
-  .item{
-    margin-bottom: 1em;
-  }
-
+@media only screen and (max-width: 800px){
+		#main-menu-top{
+				display:none;
+		}	
+		.mtphr-dnt-title{
+				margin: 1em 0 !important;
+				width:100%;
+		}
 }
